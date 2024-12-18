@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+body{
+    background: #F5F5F5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.caption{
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+.dark-nav{
+    background: #212EA0;
+    transition: 0.5s;
+}
+
+.testimonial ul{
+    overflow-x: hidden;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #EBECFE;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.gallery img{
+    width: 24%;
+}
+
+
+@media (max-width: 1000px) {
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0px;
+        bottom: 0;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}
+@media (max-width: 650px) {
+    .programs{
+        flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .about{
+        flex-direction: column;
+    }
+    .about-left{
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        width: 48%;
+        margin-bottom: 25px;
+    }
+    .testimonials{
+        padding: 0px 40px;
+    }
+    .testimonials ul li{
+        padding: 10px;
+    }
+    .contact{
+        display: block;
+    }
+    .contact-left{
+        flex-basis: 100%;
+        padding-bottom: 40px;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer ul{
+        margin-top: 10px;
+    }
+    .footer ul li{
+        margin: 10px;
+    }
+}
