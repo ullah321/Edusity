@@ -8,14 +8,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Campus = () => {
   return (
-    <div className='campus my-20 mx-auto text-center' style={{width: '80%'}}>
+    <div className='campus my-16 mx-auto text-center' style={{width: '80%'}}>
       <div className='gallery flex items-center justify-between mb-10'>
         <img className='rounded-xl' src={gallery_1} alt="" />
         <img className='rounded-xl' src={gallery_2} alt="" />
         <img className='rounded-xl' src={gallery_3} alt="" />
         <img className='rounded-xl' src={gallery_4} alt="" />
       </div>
-      <button className="bg-blue-700 text-white py-3 px-6 mt-4 mb-12 rounded-lg font-medium hover:border hover:border-blue-600 hover:bg-white hover:text-blue-700 transition duration-300 ease-in-out inline-flex items-center justify-center text-lg">See more here <FontAwesomeIcon icon={faArrowRight} className='ml-4' /> </button>
+      <button className="bg-blue-700 text-white py-2 px-5 mb-12 rounded-lg font-medium hover:border hover:border-blue-600 hover:bg-white hover:text-blue-700 transition duration-300 ease-in-out inline-flex items-center justify-center text-sm">See more here <FontAwesomeIcon icon={faArrowRight} className='ml-4' /> </button>
     </div>
   );
 }

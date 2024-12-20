@@ -22,6 +22,8 @@ a{
     opacity: 0;
     padding-top: 70%;
     transition: 0.4s;
+    background: transparent;
+    backdrop-filter: blur(2px);
 }
 .program:hover .caption{
     opacity: 1;
@@ -39,14 +41,15 @@ a{
 .contact form input, .contact form textarea{
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     background: #EBECFE;
     border: 0;
     outline: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-top: 5px;
     resize: none;
     border-radius: 10px;
+    font-size: 14px;
 }
 
 .gallery img{
@@ -73,7 +76,7 @@ a{
     }
     nav ul li{
         display: block;
-        margin: 25px 40px;
+        margin: 20px 40px;
     }
     .hide-mobile-menu{
         right: -200px;
